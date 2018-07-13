@@ -2,26 +2,32 @@
     ViewBag.Title = "Home Page";
 }
 
+<head>
+    <style>
+        body {background-color: lightblue;}
+        h2 {color: white;}
+    </style>
+</head>
+
 <div class="jumbotron">
-    <h1>Welcome to Seamus' Happy Hut</h1>
-    <p class="lead">We're a hut and we're happy!</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Welcome to Seamus's Happy Hut</h1>
+    <p class="lead">We're a hut with a generally positive disposition!</p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
         <h2>Create Accounts</h2>
-        <p>This is where customer accounts are created.</p>
+        <p>Create customer accounts.</p>
         <p>@Html.ActionLink("Create Accounts", "Create", "Customers", null, null)</p>
     </div>
     <div class="col-md-4">
         <h2>Menu</h2>
-        <p>See the menu.</p>
+        <p>View the menu.</p>
         <p>@Html.ActionLink("Menu", "Index", "Menus", null, null)</p>
     </div>
     <div class="col-md-4">
         <h2>Account</h2>
-        <p>View your customer account.</p>
+        <p>View your account.</p>
         <p>@Html.ActionLink("Account", "Index", "Customers", null, null)</p>
     </div>
 </div>
